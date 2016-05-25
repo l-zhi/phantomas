@@ -222,7 +222,7 @@ exports.module = function(phantomas) {
 		}
 
 		try {
-			dump = JSON.stringify(har);
+			dump = dump = 'onInputData(' + JSON.stringify(har) + ')';
 		} catch (e) {
 			phantomas.log('HAR: failed to stringify HAR to JSON - %s!', e);
 			return;
